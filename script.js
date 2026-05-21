@@ -335,7 +335,7 @@ formData.append('patente', patente);
 formData.append('grupo', grupo);
 formData.append('linea', linea);
 formData.append('lugar', `${direccionManual} ;${ramal};${lat}, ${lng} -Sentido: ${sentido} -Acta: ${acta}`);
-formData.append('tercero', `${tNombre} (DNI: ${tDni}, Tel: ${tTel}, Dirección: ${tDom}, Vehículo: ${tMarca} ${tModelo}, Patente: ${tDominio}), Seguro/Póliza: ${tSeguro}`);
+formData.append('tercero', `${tNombre} DNI: ${tDni}, Tel: ${tTel}, Dirección: ${tDom}, Vehículo: ${tMarca} ${tModelo}, Patente: ${tDominio}, Seguro/Póliza: ${tSeguro}`);
 formData.append('lesionados', infoLesionados);
 formData.append('testigos', infotestigos);
 formData.append('relato', relato);
