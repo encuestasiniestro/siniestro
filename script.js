@@ -331,6 +331,7 @@ formData.append('hora', hora);
 formData.append('chofer', nombre);
 formData.append('legajo', legajo);
 formData.append('unidad', unidad);
+formData.append('patente', patente);
 formData.append('grupo', grupo);
 formData.append('linea', linea);
 formData.append('lugar', `${direccionManual} ;${ramal};${lat}, ${lng} -Sentido: ${sentido} -Acta: ${acta}`);
