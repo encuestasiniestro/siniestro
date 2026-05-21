@@ -333,7 +333,7 @@ formData.append('legajo', legajo);
 formData.append('unidad', unidad);
 formData.append('grupo', grupo);
 formData.append('linea', linea);
-formData.append('lugar', `${direccionManual} ;${ramal};${lat}, ${lng}`);
+formData.append('lugar', `${direccionManual} ;${ramal};${lat}, ${lng} -Sentido: ${sentido} -Acta: ${acta}`);
 formData.append('tercero', `${tNombre} (DNI: ${tDni}, Tel: ${tTel}, Vehículo: ${tMarca} ${tModelo}, Patente: ${tDominio})`);
 formData.append('lesionados', infoLesionados);
 formData.append('testigos', infotestigos);
