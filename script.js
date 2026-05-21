@@ -322,7 +322,7 @@ async function enviarWhatsApp() {
     window.open(url, '_blank');
 
 // --- ENVÍO A GOOGLE SHEETS (Versión Optimizada) ---
-const urlPlanilla = "https://script.google.com/macros/s/AKfycbyWPpEOIX0ue7IlVtBEg6DBeLiZLY1IvbZCFbuvDfcBQ6dSpPb7YiNDSaM-nazJ-WV5/exec";
+const urlPlanilla = "https://script.google.com/macros/s/AKfycbyGKvEnU00Azhmt5YVilokk4fM94FL7OngVs-R0Ctr1LCXN1ksDpG6FZch8mzksww2I/exec";
 
 // Usamos URLSearchParams para que los datos viajen como campos de formulario
 const formData = new URLSearchParams();
@@ -331,10 +331,11 @@ formData.append('hora', hora);
 formData.append('chofer', nombre);
 formData.append('legajo', legajo);
 formData.append('unidad', unidad);
+formData.append('patente', patente);
 formData.append('grupo', grupo);
 formData.append('linea', linea);
 formData.append('lugar', `${direccionManual};${ramal};${lat}, ${lng}`);
-formData.append('tercero', `${tNombre} (DNI: ${tDni}, Tel: ${tTel}, Vehículo: ${tMarca} ${tModelo})`);
+formData.append('tercero', `${tNombre} (DNI: ${tDni}, Tel: ${tTel}, Vehículo: ${tMarca} ${tModelo} ${tDominio})`);
 formData.append('lesionados', infoLesionados);
 formData.append('testigos', infotestigos);
 formData.append('relato', relato);
